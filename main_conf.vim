@@ -35,7 +35,7 @@ set backspace=indent,eol,start  " Backspace behaviour
 "
 " set nofoldenable
 set foldmethod=indent
-set foldlevelstart=2 " fold everything below layer 1
+set foldlevelstart=1 " fold everything below layer 1
 hi Folded ctermbg=234
 
 set mouse=c   " command-line mode (see :help mouse)
@@ -53,8 +53,8 @@ set lazyredraw " to avoid scrolling problems
 set list
 set listchars=tab:·\ 
 
-set scrolloff=7
-set scrolljump=7
+set scrolloff=11
+set scrolljump=11
 
 " change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
