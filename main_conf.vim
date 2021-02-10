@@ -59,7 +59,7 @@ set scrolljump=11
 " change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
 " session options
-set sessionoptions=curdir,buffers,tabpages"
+set sessionoptions=curdir,buffers,tabpages
 " Не выгружать буфер, когда переключаемся на другой. Это позволяет редактировать
 " несколько файлов в один и тот же момент без необходимости сохранения каждый раз
 " когда переключаешься между ними

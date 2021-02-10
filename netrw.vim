@@ -15,6 +15,9 @@
 "   autocmd VimEnter * :Vexplore
 " augroup END
 
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-
+let g:netrw_banner = 0 " 0 - default
+let g:netrw_liststyle = 0
+let g:netrw_browse_split = 0
+" let g:netrw_sort_by='exten'
+let g:netrw_sort_by='name' " name - default, 'exten' isnt used because of 'g:netrw_sort_sequence'
+let g:netrw_sort_sequence='[\/]$,\.ts$,\.js$,\.rs$,\.sh$,*,\.json$'

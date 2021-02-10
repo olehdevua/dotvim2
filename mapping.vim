@@ -20,19 +20,12 @@ inoremap ;i import
 inoremap ;im implements
 inoremap ;if interface
 inoremap ;tp typeof 
-inoremap ;tn throw new 
-inoremap ;tnt throw new TypeError(
-inoremap ;tne throw new Error(
+inoremap ;tn throw new
 inoremap ;q require
-inoremap ;pr prototype
-inoremap ;pc public
-inoremap ;pv private
-inoremap ;pd protected
 inoremap ;e export
 inoremap ;en extends
 inoremap ;aa async
 inoremap ;a await
-inoremap ;ar arguments
 inoremap ;as assert
 inoremap ;ud undefined
 inoremap ;cs console
@@ -42,10 +35,8 @@ inoremap ;do document
 inoremap ;de describe
 inoremap ;df default
 inoremap ;x expect(
-inoremap ;E Error
 inoremap ;A Array
 inoremap ;O Object
-inoremap ;S String
 inoremap ;P Promise
 
 inoremap ;st static
@@ -55,5 +46,4 @@ inoremap ;u unsafe
 inoremap ;I Iterator
 inoremap ;O Option
 inoremap ;R Result
-inoremap ;mr macro_rules! 
-inoremap ;pn println!(""
+inoremap ;pn println!("

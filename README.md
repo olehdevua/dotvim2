@@ -28,3 +28,7 @@ git submodule init
 git submodule update --remote
 git submodule foreach git pull origin master
 ```
+
+# Open file directory
+
+`:e %:h` also `C-^` to [switch to prev buffer](https://stackoverflow.com/a/27692161/4039738)
