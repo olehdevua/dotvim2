@@ -25,6 +25,11 @@ set cursorline
 " color like in tmux
 hi CursorLine cterm=NONE ctermbg=235
 
+" highlight <word> when you do ':%s/<word>/..'
+if has("nvim")
+  set inccommand=nosplit
+endif
+
 set ruler           " Show row and column ruler information
 set showtabline=2   " Show tab bar
 set undolevels=256  " Number of undo levels
