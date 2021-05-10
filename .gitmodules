@@ -34,3 +34,9 @@
 [submodule "pack/coc/start/coc"]
 	path = pack/coc/start/coc
 	url = git@github.com:neoclide/coc.nvim.git
+[submodule "pack/util/start/fugitive"]
+	path = pack/util/start/fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "pack/util/start/gitgutter"]
+	path = pack/util/start/gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git

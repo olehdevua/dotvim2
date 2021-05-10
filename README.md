@@ -10,6 +10,9 @@ git submodule add git@github.com:tpope/vim-surround.git pack/util/start/surround
 git submodule add git@github.com:mattn/emmet-vim.git pack/util/start/emmet
 git submodule add git@github.com:vim-airline/vim-airline.git pack/util/start/airline
 git submodule add git@github.com:editorconfig/editorconfig-vim.git pack/util/start/editorconfig
+git submodule add git@github.com:tpope/vim-fugitive.git pack/util/start/fugitive
+git submodule add git@github.com:airblade/vim-gitgutter.git pack/util/start/gitgutter
+
 
 git submodule add git@github.com:leafgarland/typescript-vim.git pack/web/start/typescript
 git submodule add git@github.com:peitalin/vim-jsx-typescript.git pack/web/start/tsx
