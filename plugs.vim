@@ -42,7 +42,7 @@ let NERDTreeHijackNetrw=0
 let NERDTreeIgnore = ['\.class$', '\.png$', '\.db$', '\.jpg$', '\.o$', '\.so$', '\.cmi', '\.cmo', '\.cmx', 'node_modules']
 
 "
-" ============ slime =======================================
+" ============ emmet =======================================
 "
 
 let g:user_emmet_leader_key='<C-a>'

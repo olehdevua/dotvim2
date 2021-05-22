@@ -7,6 +7,6 @@ let mapleader=","
 source ~/.config/nvim/filetype.vim
 source ~/.config/nvim/netrw.vim
 source ~/.config/nvim/mapping.vim
-" source ~/.config/nvim/plugs.vim
+source ~/.config/nvim/plugs.vim
 " source ~/.config/nvim/for-coc.vim
 source ~/.config/nvim/main_conf.vim
