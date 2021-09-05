@@ -32,14 +32,15 @@ let g:slime_target = "tmux"
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
 
-let NERDTreeWinSize = 38
+let NERDTreeWinSize=50
+let NERDTreeWinPos='right'
 let NERDTreeDirArrows=1 " show arrow for dirs
 let NERDTreeMinimalUI=1
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
 let NERDTreeSortOrder=[ '^\..*/$', '/$', '^\..*', '^_.*', '\.vim$', '\.js$', '\.ts$', '\.rs$', '\.v$', '\.h$', '\.c$', '\.s$', '\.ll$', '\.sh$', '\.txt$', '*', '\.html$', '\.json$', '\.md$', 'README.*', '.*\.lock$', '^.*file']
 let NERDTreeHijackNetrw=0
-let NERDTreeIgnore = ['\.class$', '\.png$', '\.db$', '\.jpg$', '\.o$', '\.so$', '\.cmi', '\.cmo', '\.cmx', 'node_modules']
+let NERDTreeIgnore = ['\.class$', '\.png$', '\.db$', '\.jpg$', '\.o$', '\.so$', '\.cmi', '\.cmo', '\.cmx']
 
 "
 " ============ emmet =======================================

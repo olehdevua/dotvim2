@@ -1,7 +1,7 @@
 # Get started
 
 ```bash
-mkdir -p pack/{util,nav,lang,coc,web}/start
+mkdir -p pack/{util,nav,lang,web,lsp}/start
 
 git submodule add git@github.com:kien/ctrlp.vim.git pack/nav/start/ctrlp.vim
 git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtreej
@@ -20,7 +20,8 @@ git submodule add git@gitlab.redox-os.org:redox-os/ion-vim.git pack/lang/start/i
 git submodule add git@github.com:ollykel/v-vim.git pack/lang/start/v
 git submodule add git@github.com:cespare/vim-toml.git pack/lang/start/toml
 
-git submodule add git@github.com:neoclide/coc.nvim.git pack/coc/start/coc
+#git submodule add git@github.com:neoclide/coc.nvim.git pack/lsp/start/coc
+git submodule add git@github.com:neovim/nvim-lspconfig.git pack/lsp/start/nvim-lspconfig
 ```
 
 # Plugins update
