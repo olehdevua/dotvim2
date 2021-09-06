@@ -9,7 +9,7 @@ let g:ctrlp_match_window = 'min:1,max:20'
 "             \ 'dir': 'target\',
 "             \ 'file': '\v\.(so|o|png|db|jpg)$'
 "             \ }
-let g:ctrlp_root_markers=['.git', '.editorconfig', 'docker-compose.*', 'package.json']
+let g:ctrlp_root_markers=['.git', '.editorconfig', 'docker-compose.*', '.env', '.env.*']
 set wildignore+=*/target/**
 set wildignore+=*/node_modules/**
 set wildignore+=*/dist/**
@@ -17,7 +17,7 @@ set wildignore+=*/build/**
 set wildignore+=*/public/**
 " from some blog
 "let g:ctrlp_match_window = 'bottom,order:ttb'
-" let g:ctrlp_switch_buffer = 0  "  always open files in new buffers
+"let g:ctrlp_switch_buffer = 0  "  always open files in new buffers
 
 "
 " ============ slime =======================================

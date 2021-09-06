@@ -58,8 +58,8 @@ set lazyredraw " to avoid scrolling problems
 set list
 set listchars=tab:·\ 
 
-set scrolloff=11
-set scrolljump=11
+set scrolloff=12
+set scrolljump=12
 
 " change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 

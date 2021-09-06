@@ -13,7 +13,8 @@ inoremap [ []<Left>
 inoremap ( ()<Left>
 inoremap { {}<Left>
 
-inoremap ;r return
+iabbrev ;r return
+"inoremap ;r return
 inoremap ;f function
 inoremap ;in instanceof
 inoremap ;i import
@@ -36,13 +37,11 @@ inoremap ;de describe
 inoremap ;df default
 inoremap ;x expect(
 inoremap ;A Array
-inoremap ;O Object
 inoremap ;P Promise
 
 inoremap ;st static
 
 inoremap ;s struct
-inoremap ;u unsafe
 inoremap ;I Iterator
 inoremap ;O Option
 inoremap ;R Result

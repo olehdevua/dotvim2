@@ -19,9 +19,14 @@ git submodule add git@github.com:peitalin/vim-jsx-typescript.git pack/web/start/
 git submodule add git@gitlab.redox-os.org:redox-os/ion-vim.git pack/lang/start/ion
 git submodule add git@github.com:ollykel/v-vim.git pack/lang/start/v
 git submodule add git@github.com:cespare/vim-toml.git pack/lang/start/toml
+git submodule add git@github.com:ellisonleao/glow.nvim.git pack/lang/start/glow
+
 
 #git submodule add git@github.com:neoclide/coc.nvim.git pack/lsp/start/coc
 git submodule add git@github.com:neovim/nvim-lspconfig.git pack/lsp/start/nvim-lspconfig
+git submodule add git@github.com:hrsh7th/nvim-cmp.git pack/lsp/start/nvim-cmp
+git submodule add git@github.com:hrsh7th/vim-vsnip.git pack/lsp/start/vim-vsnip
+git submodule add git@github.com:hrsh7th/cmp-buffer.git pack/lsp/start/cmp-buffer
 ```
 
 # Plugins update
