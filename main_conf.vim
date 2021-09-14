@@ -1,14 +1,21 @@
 set encoding=utf-8 " default text encoding
 
-colorscheme peachpuff
+colorscheme default
 set background=dark
 set showcmd
-set autoread          " For auto update files
-set smartcase         " for search
 set number            " short form 'nu'
+set autoread          " For auto update files
+set wildmenu
+set smartcase         " for search
 set showmatch         " highlight matching brace  (set sm)
 set ignorecase        " ignore registre while searching (set ic)
-set wildmenu
+set nohlsearch
+set incsearch
+
+set clipboard+=unnamedplus
+"set formatoptions-=cro " stop newline continution of comments (for now have no clue what does it means)
+
+set pumheight=13 " height of popup menu
 
 " https://habr.com/ru/post/64224/
 set autoindent
@@ -18,9 +25,8 @@ set shiftwidth=2
 set softtabstop=2
 set tabstop=2
 set expandtab         " transformation tab into spaces
+set nowrap
 
-set nohlsearch
-set incsearch
 set cursorline
 " color like in tmux
 hi CursorLine cterm=NONE ctermbg=235
@@ -43,7 +49,7 @@ set foldmethod=indent
 set foldlevelstart=1 " fold everything below layer 1
 hi Folded ctermbg=234
 
-set mouse=c   " command-line mode (see :help mouse)
+set mouse=a   " command-line mode (see :help mouse)
 
 if has ("autocmd")
     filetype indent on
@@ -52,7 +58,7 @@ endif
 set tags=tags;/,rusty-tags.vi
 
 " Performance
-set synmaxcol=256
+set synmaxcol=512
 set lazyredraw " to avoid scrolling problems
 
 set list
@@ -79,6 +85,7 @@ set noswapfile " disable creating swap files
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience. (AFAIU better to disable swap files)
 set updatetime=200
+set timeoutlen=500 " didnt completely understood its meaning
 
 " Always show the signcolumn, otherwise it would shift the text each time
 " diagnostics appear/become resolved.
