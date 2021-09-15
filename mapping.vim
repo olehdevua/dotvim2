@@ -1,6 +1,16 @@
 " `nore` mean NOT RECURSION .. for cases like `:inoremap ff fff`
 inoremap jf <Esc>l
 
+nnoremap <C-Q> :qall!
+"nnoremap <C-b> :bp<CR>
+nnoremap <C-b> :e#<CR> " behavior of C-^
+
+vnoremap < <gv
+vnoremap > >gv
+
+nnoremap zl 33zl
+nnoremap zh 33zh
+
 " commented it because it prevent CTRL-I to work
 " noremap <Tab> gt
 " noremap <S-Tab> gT
@@ -12,6 +22,9 @@ inoremap <> <><Left>
 inoremap [ []<Left>
 inoremap ( ()<Left>
 inoremap { {}<Left>
+
+iabbrev cosnt const
+iabbrev ocnst const
 
 iabbrev ;r return
 "inoremap ;r return

@@ -1,7 +1,7 @@
 set encoding=utf-8 " default text encoding
 
-colorscheme default
 set background=dark
+colorscheme peachpuff
 set showcmd
 set number            " short form 'nu'
 set autoread          " For auto update files
@@ -11,6 +11,8 @@ set showmatch         " highlight matching brace  (set sm)
 set ignorecase        " ignore registre while searching (set ic)
 set nohlsearch
 set incsearch
+
+hi Comment cterm=italic
 
 set clipboard+=unnamedplus
 "set formatoptions-=cro " stop newline continution of comments (for now have no clue what does it means)
@@ -49,7 +51,7 @@ set foldmethod=indent
 set foldlevelstart=1 " fold everything below layer 1
 hi Folded ctermbg=234
 
-set mouse=a   " command-line mode (see :help mouse)
+set mouse=a
 
 if has ("autocmd")
     filetype indent on
@@ -64,8 +66,8 @@ set lazyredraw " to avoid scrolling problems
 set list
 set listchars=tab:·\ 
 
-set scrolloff=12
-set scrolljump=12
+set scrolloff=13
+set scrolljump=13
 
 " change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 

@@ -10,11 +10,19 @@ let g:ctrlp_match_window = 'min:1,max:20'
 "             \ 'file': '\v\.(so|o|png|db|jpg)$'
 "             \ }
 let g:ctrlp_root_markers=['.git', '.editorconfig', 'docker-compose.*', '.env', '.env.*']
-set wildignore+=*/target/**
-set wildignore+=*/node_modules/**
-set wildignore+=*/dist/**
-set wildignore+=*/build/**
-set wildignore+=*/public/**
+set wildignore+=target
+set wildignore+=node_modules
+set wildignore+=dist
+set wildignore+=build
+set wildignore+=public
+set wildignore+=coverage
+" just in case (old version, looks extra complicated) -v
+"set wildignore+=*/target/**
+"set wildignore+=*/node_modules/**
+"set wildignore+=*/dist/**
+"set wildignore+=*/build/**
+"set wildignore+=*/public/**
+"set wildignore+=*/coverage/**
 " from some blog
 "let g:ctrlp_match_window = 'bottom,order:ttb'
 "let g:ctrlp_switch_buffer = 0  "  always open files in new buffers
@@ -32,7 +40,7 @@ let g:slime_target = "tmux"
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
 
-let NERDTreeWinSize=50
+let NERDTreeWinSize=60
 let NERDTreeWinPos='right'
 let NERDTreeDirArrows=1 " show arrow for dirs
 let NERDTreeMinimalUI=1
