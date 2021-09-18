@@ -12,7 +12,7 @@ set ignorecase        " ignore registre while searching (set ic)
 set nohlsearch
 set incsearch
 
-hi Comment cterm=italic
+" hi Comment cterm=italic
 
 set clipboard+=unnamedplus
 "set formatoptions-=cro " stop newline continution of comments (for now have no clue what does it means)
