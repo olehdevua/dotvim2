@@ -39,6 +39,7 @@ let g:slime_target = "tmux"
 
 nnoremap <leader>nt :NERDTreeToggle<cr>
 nnoremap <leader>nf :NERDTreeFind<cr>
+nnoremap <Right> :NERDTreeFind<cr>
 
 let NERDTreeWinSize=60
 let NERDTreeWinPos='right'

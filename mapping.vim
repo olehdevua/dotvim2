@@ -11,6 +11,9 @@ vnoremap > >gv
 nnoremap zl 33zl
 nnoremap zh 33zh
 
+nnoremap <S-Left> :vertical resize -3<CR>
+nnoremap <S-Right> :vertical resize +3<CR>
+
 " commented it because it prevent CTRL-I to work
 " noremap <Tab> gt
 " noremap <S-Tab> gT
