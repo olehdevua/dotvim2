@@ -46,7 +46,7 @@ let NERDTreeDirArrows=1 " show arrow for dirs
 let NERDTreeMinimalUI=1
 let NERDTreeChDirMode=2
 let NERDTreeShowHidden=1
-let NERDTreeSortOrder=[ '^\..*/$', '/$', '^\..*', '^_.*', '\.vim$', '\.js$', '\.ts$', '\.rs$', '\.v$', '\.h$', '\.c$', '\.s$', '\.ll$', '\.sh$', '\.txt$', '*', '\.html$', '\.json$', '\.md$', 'README.*', '.*\.lock$', '^.*file']
+let NERDTreeSortOrder=[ '^\..*/$', '/$', '^\..*', '^_.*', '\.vim$', '\.js$', '\.ts$', '\.rs$', '\.v$', '\.h$', '\.c$', '\.s$', '\.ll$', '\.sh$', '\.txt$', '*', '\.properties$', '\.patch$', '\.html$', '\.json$', '\.md$', 'README.*', '.*\.lock$', '^.*file' ]
 let NERDTreeHijackNetrw=0
 let NERDTreeIgnore = ['\.class$', '\.png$', '\.db$', '\.jpg$', '\.o$', '\.so$', '\.cmi', '\.cmo', '\.cmx']
 

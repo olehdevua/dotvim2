@@ -13,14 +13,13 @@ git submodule add git@github.com:editorconfig/editorconfig-vim.git pack/util/sta
 git submodule add git@github.com:tpope/vim-fugitive.git pack/util/start/fugitive
 git submodule add git@github.com:airblade/vim-gitgutter.git pack/util/start/gitgutter
 
-git submodule add git@github.com:leafgarland/typescript-vim.git pack/web/start/typescript
-git submodule add git@github.com:peitalin/vim-jsx-typescript.git pack/web/start/tsx
-
 git submodule add git@gitlab.redox-os.org:redox-os/ion-vim.git pack/lang/start/ion
 git submodule add git@github.com:ollykel/v-vim.git pack/lang/start/v
 git submodule add git@github.com:cespare/vim-toml.git pack/lang/start/toml
 git submodule add git@github.com:ellisonleao/glow.nvim.git pack/lang/start/glow
 
+git submodule add git@github.com:leafgarland/typescript-vim.git pack/web/start/typescript
+git submodule add git@github.com:peitalin/vim-jsx-typescript.git pack/web/start/tsx
 
 # note: opt plugin
 git submodule add git@github.com:neoclide/coc.nvim.git pack/lsp/opt/coc
