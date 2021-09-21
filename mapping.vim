@@ -1,7 +1,8 @@
 " `nore` mean NOT RECURSION .. for cases like `:inoremap ff fff`
 inoremap jf <Esc>l
 
-nnoremap <C-Q> :qall!
+"nnoremap <C-q><C-q> :qall!
+nnoremap <leader>qq :qall! <CR>
 "nnoremap <C-b> :bp<CR>
 nnoremap <C-b> :e#<CR> " behavior of C-^
 
@@ -13,6 +14,11 @@ nnoremap zh 33zh
 
 nnoremap <S-Left> :vertical resize -3<CR>
 nnoremap <S-Right> :vertical resize +3<CR>
+
+":echom expand("%:h") . '/' . expand("%:t") . ':' . line(".")    
+"nnoremap <C-c><C-p> :echom expand("%:p") . ':' . line(".") <CR>
+nnoremap <leader>cp :let @+=expand("%:p") . ':' . line(".") <CR>
+" ^-- `+` is the name of register
 
 " commented it because it prevent CTRL-I to work
 " noremap <Tab> gt
