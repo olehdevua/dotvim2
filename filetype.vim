@@ -6,6 +6,7 @@ au BufRead,BufNewFile *.s set filetype=gas
 au BufRead,BufNewFile *.asm set filetype=fasm
 au BufRead,BufNewFile *.ASM set filetype=fasm
 au BufRead,BufNewFile *.kubeconfig set filetype=yaml
+au BufRead,BufNewFile ~/.kube/config* set filetype=yaml
 au BufRead,BufNewFile Dockerfile.* set filetype=dockerfile
 
 au Filetype gitcommit setlocal spell textwidth=72
