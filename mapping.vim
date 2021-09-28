@@ -12,6 +12,28 @@ vnoremap > >gv
 nnoremap zl 33zl
 nnoremap zh 33zh
 
+" https://www.youtube.com/watch?v=hSHATqh8svM
+"
+" keep cursor at the same place
+nnoremap n nzzzv
+nnoremap N Nzzzv
+nnoremap J mzJ`z
+" copy-to-the-end
+" nnoremap Y y$
+" v- to not capture cr-nl (:help g_)
+nnoremap Y yg_
+" undo breackpoints
+inoremap , ,<c-g>u
+inoremap . .<c-g>u
+inoremap ! !<c-g>u
+inoremap ? ?<c-g>u
+inoremap ; ;<c-g>u
+inoremap { {<c-g>u
+inoremap [ [<c-g>u
+inoremap " "<c-g>u
+inoremap ' '<c-g>u
+
+
 nnoremap <S-Left> :vertical resize -3<CR>
 nnoremap <S-Right> :vertical resize +3<CR>
 
