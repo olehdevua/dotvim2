@@ -1,8 +1,11 @@
 " `nore` mean NOT RECURSION .. for cases like `:inoremap ff fff`
 inoremap jf <Esc>l
 
+nnoremap <Space> <Down>
+
 "nnoremap <C-q><C-q> :qall!
-nnoremap <leader>qq :qall! <CR>
+nnoremap <leader>qa :qall! <CR>
+nnoremap <leader>qq :q! <CR>
 "nnoremap <C-b> :bp<CR>
 nnoremap <C-b> :e#<CR> " behavior of C-^
 
