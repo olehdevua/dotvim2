@@ -21,13 +21,18 @@ git submodule add git@github.com:ellisonleao/glow.nvim.git pack/lang/start/glow
 git submodule add git@github.com:leafgarland/typescript-vim.git pack/web/start/typescript
 git submodule add git@github.com:peitalin/vim-jsx-typescript.git pack/web/start/tsx
 
-# note: opt plugin
-git submodule add git@github.com:neoclide/coc.nvim.git pack/lsp/opt/coc
+##### lsp
 
 git submodule add git@github.com:neovim/nvim-lspconfig.git pack/lsp/start/nvim-lspconfig
-git submodule add git@github.com:hrsh7th/nvim-cmp.git pack/lsp/start/nvim-cmp
+
+git submodule add git@github.com:hrsh7th/cmp-nvim-lsp pack/lsp/start/cmp-nvim-lsp
+git submodule add git@github.com:hrsh7th/cmp-buffer pack/lsp/start/cmp-buffer
+git submodule add git@github.com:hrsh7th/cmp-path pack/lsp/start/cmp-path
+git submodule add git@github.com:hrsh7th/cmp-cmdline pack/lsp/start/cmp-cmdline
+git submodule add git@github.com:hrsh7th/nvim-cmp pack/lsp/start/nvim-cmp
+
 git submodule add git@github.com:hrsh7th/vim-vsnip.git pack/lsp/start/vim-vsnip
-git submodule add git@github.com:hrsh7th/cmp-buffer.git pack/lsp/start/cmp-buffer
+git submodule add git@github.com:hrsh7th/cmp-vsnip.git pack/lsp/start/cmp-vsnip
 ```
 
 ## 1-2-plugins-update
