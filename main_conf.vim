@@ -1,7 +1,7 @@
 set encoding=utf-8 " default text encoding
 
+colorscheme darkplus
 set background=dark
-colorscheme peachpuff
 set showcmd
 set number            " short form 'nu'
 set autoread          " For auto update files
@@ -89,7 +89,8 @@ set noswapfile " disable creating swap files
 set updatetime=200
 set timeoutlen=500 " didnt completely understood its meaning
 
-set signcolumn=auto:2 " or number ?
+" set signcolumn=auto:2 " or number ?
+set signcolumn=yes:2 " or number ?
 
 " give more space for displaying messages
 set cmdheight=2

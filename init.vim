@@ -9,10 +9,9 @@ source ~/.config/nvim/netrw.vim
 source ~/.config/nvim/mapping.vim
 source ~/.config/nvim/plugs.vim
 "source ~/.config/nvim/for-coc.vim
-"source ~/.config/nvim/lsp-config.vim
 source ~/.config/nvim/main_conf.vim
 
 lua << EOF
 require("lsp-config")
-require("cmp-config")
+require("treesitter")
 EOF
