@@ -89,14 +89,7 @@ set noswapfile " disable creating swap files
 set updatetime=200
 set timeoutlen=500 " didnt completely understood its meaning
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("nvim-0.5.0") || has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set signcolumn=yes " or number ?
 
 " give more space for displaying messages
 set cmdheight=2
