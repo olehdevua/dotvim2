@@ -54,6 +54,17 @@ git submodule update --remote
 git submodule foreach git pull origin master
 ```
 
+For the future:
+
+git@github.com:nvim-lualine/lualine.nvim.git
+https://github.com/akinsho/bufferline.nvim
+https://github.com/numToStr/Comment.nvim
+https://github.com/L3MON4D3/LuaSnip # maybe
+https://github.com/lewis6991/gitsigns.nvim
+https://github.com/kyazdani42/nvim-tree.lua
+
+https://github.com/NvChad/NvChad # full-fledged setup
+
 -----------------------------------------------------------
 
 # 3-tricks
