@@ -12,7 +12,8 @@ require'nvim-treesitter.configs'.setup {
     "json",
     "yaml",
     "vim",
-    "dockerfile"
+    "dockerfile",
+    "markdown"
   },
 
   -- Install parsers synchronously (only applied to `ensure_installed`)
