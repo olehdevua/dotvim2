@@ -65,25 +65,17 @@ iabbrev ;r return
 inoremap ;f function
 inoremap ;in instanceof
 inoremap ;i import
-inoremap ;im implements
 inoremap ;if interface
-inoremap ;tp typeof 
 inoremap ;tn throw new
 inoremap ;q require
 inoremap ;e export
-inoremap ;en extends
-inoremap ;aa async
 inoremap ;a await
-inoremap ;as assert
 inoremap ;ud undefined
 inoremap ;cs console
 inoremap ;co constructor
 inoremap ;c const
-inoremap ;do document
-inoremap ;de describe
 inoremap ;df default
 inoremap ;x expect(
-inoremap ;A Array
 inoremap ;P Promise
 
 inoremap ;st static

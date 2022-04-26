@@ -94,3 +94,6 @@ set signcolumn=yes:2 " or number ?
 
 " give more space for displaying messages
 set cmdheight=2
+
+" single status line for all windows
+set laststatus=3
