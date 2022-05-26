@@ -44,8 +44,8 @@ let g:slime_target = "tmux"
 " ============ nerdtree ====================================
 "
 
-nnoremap <leader>nd :NERDTreeToggle<cr>
-nnoremap <leader>nf :NERDTreeFind<cr>
+nnoremap <leader>nn :NERDTreeToggle<cr>
+"nnoremap <leader>nf :NERDTreeFind<cr>
 "nnoremap <Right> :NERDTreeFind<cr>
 
 let NERDTreeWinSize=60

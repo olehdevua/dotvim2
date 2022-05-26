@@ -46,6 +46,7 @@ git submodule add git@github.com:jakewvincent/mkdnflow.nvim.git pack/lsp/start/m
 
 git submodule add git@github.com:kien/ctrlp.vim.git pack/nav/start/ctrlp.vim
 git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtreej
+git submodule add git@github.com:kyazdani42/nvim-tree.lua.git pack/nav/start/nvim-tree
 
 git submodule add git@github.com:nvim-telescope/telescope.nvim.git  pack/nav/start/telescope.nvim
 git submodule add git@github.com:nvim-telescope/telescope-symbols.nvim.git pack/nav/start/telescope-symbols
