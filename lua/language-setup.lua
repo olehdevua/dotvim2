@@ -90,7 +90,9 @@ local capabilities = require('cmp_nvim_lsp')
 
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
--- vim.diagnostic.config({ virtual_text = false })
+vim.diagnostic.config({
+  virtual_text = false
+})
 --
 local opts = { noremap=true, silent=true }
 vim.api.nvim_set_keymap('n', '<space>e', '<cmd>lua vim.diagnostic.open_float()<CR>', opts)
@@ -121,11 +123,10 @@ local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<space>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
 end
 
--- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
 local servers = { 'rust_analyzer', 'tsserver', 'bashls' }
 for _, lsp in pairs(servers) do
-  require('lspconfig')[lsp].setup {
+  lsp_package[lsp].setup {
     capabilities,
     on_attach = on_attach,
     flags = {
@@ -135,8 +136,24 @@ for _, lsp in pairs(servers) do
   }
 end
 
--- LSP config written in vim
---
+lsp_package.sumneko_lua.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  settings = {
+    Lua = {
+      diagnostics = {
+        globals = { "vim" },
+      },
+      workspace = {
+        library = {
+          [vim.fn.expand "$VIMRUNTIME/lua"] = true,
+          [vim.fn.stdpath "config" .. "/lua"] = true,
+        },
+      },
+    },
+  },
+}
+
 -- " LSP config (the mappings used in the default file don't quite work right)
 -- nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
 -- nnoremap <silent> gD <cmd>lua vim.lsp.buf.declaration()<CR>
@@ -204,8 +221,8 @@ require("trouble").setup {
   width = 50, -- width of the list when position is left or right
   icons = true, -- use devicons for filenames
   mode = "workspace_diagnostics", -- "workspace_diagnostics", "document_diagnostics", "quickfix", "lsp_references", "loclist"
-  fold_open = "", -- icon used for open folds
-  fold_closed = "", -- icon used for closed folds
+--fold_open = "", -- icon used for open folds
+--fold_closed = "", -- icon used for closed folds
   group = true, -- group results by file
   padding = true, -- add an extra new line on top of the list
   action_keys = { -- key mappings for actions in the trouble list
@@ -235,13 +252,15 @@ require("trouble").setup {
   auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
   auto_fold = false, -- automatically fold a file trouble list at creation
   auto_jump = {"lsp_definitions"}, -- for the given modes, automatically jump if there is only a single result
-  signs = {
-      -- icons / text used for a diagnostic
-      error = "",
-      warning = "",
-      hint = "",
-      information = "",
-      other = "﫠"
-  },
+--signs = {
+--    -- icons / text used for a diagnostic
+--    error = "",
+--    warning = "",
+--    hint = "",
+--    information = "",
+--    other = "﫠"
+--},
   use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
 }
+
+vim.api.nvim_set_keymap('n', '<leader>nt', '<cmd>TroubleToggle<cr>', { noremap = true })

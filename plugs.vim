@@ -22,6 +22,7 @@ set wildignore+=dist
 set wildignore+=build
 set wildignore+=public
 set wildignore+=coverage
+set wildignore+=pack
 " just in case (old version, looks extra complicated) -v
 "set wildignore+=*/target/**
 "set wildignore+=*/node_modules/**

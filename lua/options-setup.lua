@@ -1,7 +1,6 @@
 -- local options = {
 --   backup = false,                          -- creates a backup file
 --   clipboard = "unnamedplus",               -- allows neovim to access the system clipboard
---   cmdheight = 2,                           -- more space in the neovim command line for displaying messages
 --   completeopt = { "menuone", "noselect" }, -- mostly just for cmp
 --   conceallevel = 0,                        -- so that `` is visible in markdown files
 --   fileencoding = "utf-8",                  -- the encoding written to a file
@@ -10,16 +9,8 @@
 --   mouse = "a",                             -- allow the mouse to be used in neovim
 --   pumheight = 10,                          -- pop up menu height
 --   showmode = false,                        -- we don't need to see things like -- INSERT -- anymore
---   showtabline = 2,                         -- always show tabs
---   smartcase = true,                        -- smart case
---   smartindent = true,                      -- make indenting smarter again
---   splitbelow = true,                       -- force all horizontal splits to go below current window
---   splitright = true,                       -- force all vertical splits to go to the right of current window
---   swapfile = false,                        -- creates a swapfile
---   -- termguicolors = true,                    -- set term gui colors (most terminals support this)
---   timeoutlen = 100,                        -- time to wait for a mapped sequence to complete (in milliseconds)
 --   undofile = true,                         -- enable persistent undo
---   updatetime = 300,                        -- faster completion (4000ms default)
+--   updatetime = 300,                        
 --   writebackup = false,                     -- if a file is being edited by another program (or was written to file while editing with another program), it is not allowed to be edited
 --   expandtab = true,                        -- convert tabs to spaces
 --   shiftwidth = 2,                          -- the number of spaces inserted for each indentation
@@ -51,17 +42,26 @@
 -- default text encoding
 vim.o.encoding = 'utf-8'
 
+vim.cmd 'colorscheme darkplus'
+-- vim.api.exec
+
 vim.o.background = dark
 vim.o.showcmd = true
-vim.o.number = true            -- short form 'nu'
-vim.o.autoread = true          -- For auto update files
+vim.o.number = true           -- short form 'nu'
+vim.o.autoread = true         -- For auto update files
 vim.o.wildmenu = true
-vim.o.smartcase = true         -- for search
-vim.o.showmatch = true         -- highlight matching brace  (set sm)
-vim.o.ignorecase = true        -- ignore registre while searching (set ic)
+vim.o.smartcase = true        -- smart-case search
+vim.o.showmatch = true        -- highlight matching brace  (set sm)
+vim.o.ignorecase = true       -- ignore registre while searching (set ic)
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
+vim.o.termguicolors = true    -- set term gui colors (most terminals support this)
+
+vim.o.splitbelow = true       -- force all horizontal splits to go below current window
+vim.o.splitright = true       -- force all vertical splits to go to the right of current window
+
+vim.cmd 'hi Comment cterm=italic'
 -- " hi Comment cterm=italic
 -- 
 -- set clipboard+=unnamedplus
@@ -90,9 +90,9 @@ vim.ocursorline = true
 -- endif
 vim.o.inccommand = 'nosplit'
 
-vim.oruler = true                   -- Show row and column ruler information
-vim.oshowtabline = 2                -- Show tab bar
-vim.oundolevels=256                 -- Number of undo levels
+vim.o.ruler = true                   -- Show row and column ruler information
+vim.o.showtabline = 2                -- Show tab bar
+vim.o.undolevels = 256               -- Number of undo levels
 -- Backspace behaviour
 vim.obackspace='indent,eol,start'
 
@@ -139,10 +139,13 @@ vim.o.writebackup = false
 -- disable creating swap files
 vim.o.swapfile = false
 --"
---" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
---" delays and poor user experience. (AFAIU better to disable swap files)
+-- Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+-- delays and poor user experience. (AFAIU better to disable swap files).
+-- btw: gives faster completion (4000ms default)
 vim.o.updatetime = 200
-vim.o.timeoutlen = 500 -- didnt completely understood its meaning
+-- time to wait for a mapped sequence to complete (in milliseconds)
+-- didnt completely understood its meaning
+vim.o.timeoutlen = 500
 
 -- " set signcolumn=auto:2 " or number ?
 -- v-- or number ?
