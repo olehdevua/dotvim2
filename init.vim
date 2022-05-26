@@ -9,9 +9,10 @@ source ~/.config/nvim/netrw.vim
 source ~/.config/nvim/mapping.vim
 source ~/.config/nvim/plugs.vim
 "source ~/.config/nvim/for-coc.vim
-source ~/.config/nvim/main_conf.vim
+"source ~/.config/nvim/main_conf.vim
 
 lua << EOF
+require("options-setup")
 require("misc-setup")
 require("language-setup")
 EOF
