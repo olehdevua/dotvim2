@@ -41,11 +41,11 @@
 
 -- default text encoding
 vim.o.encoding = 'utf-8'
-
 vim.cmd 'colorscheme darkplus'
--- vim.api.exec
-
 vim.o.background = dark
+vim.o.termguicolors = true    -- set term gui colors (most terminals support this)
+
+vim.o.title = true
 vim.o.showcmd = true
 vim.o.number = true           -- short form 'nu'
 vim.o.autoread = true         -- For auto update files
@@ -56,14 +56,12 @@ vim.o.ignorecase = true       -- ignore registre while searching (set ic)
 vim.o.hlsearch = false
 vim.o.incsearch = true
 
-vim.o.termguicolors = true    -- set term gui colors (most terminals support this)
 
 vim.o.splitbelow = true       -- force all horizontal splits to go below current window
 vim.o.splitright = true       -- force all vertical splits to go to the right of current window
 
+
 vim.cmd 'hi Comment cterm=italic'
--- " hi Comment cterm=italic
--- 
 -- set clipboard+=unnamedplus
 -- "set formatoptions-=cro " stop newline continution of comments (for now have no clue what does it means)
 vim.o.clipboard = 'unnamedplus'
@@ -82,7 +80,7 @@ vim.o.wrap = false
 
 vim.ocursorline = true
 -- " color like in tmux
--- hi CursorLine cterm=NONE ctermbg=235
+vim.cmd 'hi CursorLine cterm=NONE ctermbg=235'
 
 -- " highlight <word> when you do ':%s/<word>/..'
 -- if has("nvim")
@@ -101,9 +99,11 @@ vim.obackspace='indent,eol,start'
 --
 -- set nofoldenable
 vim.o.foldmethod = 'indent'
--- fold everything below layer 1
-vim.o.foldlevelstart = 1
---hi Folded ctermbg=234
+--
+-- fold everything below layer 2
+vim.o.foldlevelstart = 2
+--
+vim.cmd 'hi Folded ctermbg=234'
 
 vim.o.mouse = 'a'
 
@@ -122,6 +122,7 @@ vim.o.list = true
 
 vim.o.scrolloff=17
 vim.o.scrolljump=17
+vim.o.sidescrolloff = 24
 
 --" change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
@@ -146,6 +147,7 @@ vim.o.updatetime = 200
 -- time to wait for a mapped sequence to complete (in milliseconds)
 -- didnt completely understood its meaning
 vim.o.timeoutlen = 500
+-- vim.o.ttimeoutlen = 0 -- hz wo eto, razberis
 
 -- " set signcolumn=auto:2 " or number ?
 -- v-- or number ?

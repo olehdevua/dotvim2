@@ -16,4 +16,5 @@ require("options-setup")
 require("misc-setup")
 require("language-setup")
 require("code-nav-setup")
+require("mappings-setup")
 EOF

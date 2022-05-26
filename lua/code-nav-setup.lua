@@ -1,7 +1,7 @@
 vim.g.symbols_outline = {
     highlight_hovered_item = true,
     show_guides = true,
-    auto_preview = true,
+    auto_preview = false,
     position = 'right',
     relative_width = true,
     width = 30,
@@ -20,22 +20,25 @@ vim.g.symbols_outline = {
         code_actions = "a",
     },
     lsp_blacklist = {},
-    symbol_blacklist = {},
+    symbol_blacklist = {
+      'Property',
+      'Constant'
+    },
     symbols = {
         File = {icon = "📜", hl = "TSURI"},
         Module = {icon = "📦", hl = "TSNamespace"},
-        Namespace = {icon = "", hl = "TSNamespace"},
-        Package = {icon = "", hl = "TSNamespace"},
+        Namespace = {icon = "📌", hl = "TSNamespace"},
+        Package = {icon = "🎁", hl = "TSNamespace"},
         Class = {icon = "𝓒", hl = "TSType"},
         Method = {icon = "ƒ", hl = "TSMethod"},
         Property = {icon = "🪄", hl = "TSMethod"},
-        Field = {icon = "", hl = "TSField"},
+        Field = {icon = "♣️", hl = "TSField"},
         Constructor = {icon = "🔧", hl = "TSConstructor"},
         Enum = {icon = "ℰ", hl = "TSType"},
         Interface = {icon = "ﰮ", hl = "TSType"},
         Function = {icon = "⚙️", hl = "TSFunction"},
-        Variable = {icon = "", hl = "TSConstant"},
-        Constant = {icon = "", hl = "TSConstant"},
+        Variable = {icon = "🥃", hl = "TSConstant"},
+        Constant = {icon = "♾", hl = "TSConstant"},
         String = {icon = "𝓐", hl = "TSString"},
         Number = {icon = "#", hl = "TSNumber"},
         Boolean = {icon = "⊨", hl = "TSBoolean"},
@@ -50,3 +53,5 @@ vim.g.symbols_outline = {
         TypeParameter = {icon = "𝙏", hl = "TSParameter"}
     }
 }
+
+vim.api.nvim_set_keymap('n', '<leader>ns', '<cmd>SymbolsOutline<cr>', { noremap = true })
