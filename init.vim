@@ -12,7 +12,6 @@ source ~/.config/nvim/plugs.vim
 source ~/.config/nvim/main_conf.vim
 
 lua << EOF
-require("lsp-config")
-require("treesitter")
--- require("md-setup")
+require("misc-setup")
+require("language-setup")
 EOF

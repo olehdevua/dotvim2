@@ -15,6 +15,12 @@ git submodule add git@github.com:ellisonleao/glow.nvim.git pack/lang/start/glow
 
 git submodule add git@github.comLunarVim/Colorschemes.git pack/util/start/colorschemes
 
+##### dependencies
+
+git submodule add git@github.com:nvim-lua/plenary.nvim.git pack/util/start/plenary.nvim
+git submodule add git@github.com:kyazdani42/nvim-web-devicons.git pack/util/start/nvim-web-devicons
+git submodule add git@github.com:folke/lsp-colors.nvim.git pack/util/start/lsp-colors
+
 ##### lsp + treesitter
 
 git submodule add git@github.com:neovim/nvim-lspconfig.git pack/lsp/start/nvim-lspconfig
@@ -28,6 +34,8 @@ git submodule add git@github.com:hrsh7th/nvim-cmp pack/lsp/start/nvim-cmp
 git submodule add git@github.com:hrsh7th/vim-vsnip.git pack/lsp/start/vim-vsnip
 git submodule add git@github.com:hrsh7th/cmp-vsnip.git pack/lsp/start/cmp-vsnip
 
+git submodule add git@github.com:folke/trouble.nvim.git pack/lsp/start/trouble
+
 git submodule add git@github.com:nvim-treesitter/nvim-treesitter.git pack/lsp/start/nvim-treesitter
 
 git submodule add git@github.com:mfussenegger/nvim-dap.git pack/lsp/start/nvim-dap
@@ -38,9 +46,6 @@ git submodule add git@github.com:jakewvincent/mkdnflow.nvim.git pack/lsp/start/m
 
 git submodule add git@github.com:kien/ctrlp.vim.git pack/nav/start/ctrlp.vim
 git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtreej
-
-git submodule add git@github.com:nvim-lua/plenary.nvim.git pack/util/start/plenary.nvim
-git submodule add git@github.com:kyazdani42/nvim-web-devicons.git pack/util/start/nvim-web-devicons
 
 git submodule add git@github.com:nvim-telescope/telescope.nvim.git  pack/nav/start/telescope.nvim
 git submodule add git@github.com:nvim-telescope/telescope-symbols.nvim.git pack/nav/start/telescope-symbols
