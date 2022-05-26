@@ -15,4 +15,5 @@ lua << EOF
 require("options-setup")
 require("misc-setup")
 require("language-setup")
+require("code-nav-setup")
 EOF

@@ -49,6 +49,7 @@ git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtree
 
 git submodule add git@github.com:nvim-telescope/telescope.nvim.git  pack/nav/start/telescope.nvim
 git submodule add git@github.com:nvim-telescope/telescope-symbols.nvim.git pack/nav/start/telescope-symbols
+git submodule add git@github.com:simrat39/symbols-outline.nvim.git pack/nav/start/symbols-outline
 ```
 
 ## 1-2-plugins-update
