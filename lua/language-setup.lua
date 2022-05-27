@@ -88,6 +88,14 @@ cmp.setup.cmdline(':', {
 local capabilities = require('cmp_nvim_lsp')
   .update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
+
+vim.cmd [[
+  sign define DiagnosticSignError text=🚨 linehl= texthl=DiagnosticSignError numhl=
+  sign define DiagnosticSignWarn text=🙈 linehl= texthl=DiagnosticSignWarn numhl=
+  sign define DiagnosticSignInfo text=🗿 linehl= texthl=DiagnosticSignInfo numhl=
+  sign define DiagnosticSignHint text=💡 linehl= texthl=DiagnosticSignHint numhl=
+]]
+
 -- Mappings.
 -- See `:help vim.diagnostic.*` for documentation on any of the below functions
 vim.diagnostic.config({
@@ -252,14 +260,14 @@ require("trouble").setup {
   auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
   auto_fold = false, -- automatically fold a file trouble list at creation
   auto_jump = {"lsp_definitions"}, -- for the given modes, automatically jump if there is only a single result
---signs = {
---    -- icons / text used for a diagnostic
---    error = "⛑",
---    warning = "🙈",
---    hint = "☝",
---    information = "❕",
---    other = "🔅"
---},
+  signs = {
+      -- icons / text used for a diagnostic
+      error = "🚨",
+      warning = "🙈",
+      hint = "💡",
+      information = "🗿",
+      other = "🔅"
+  },
   use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
 }
 

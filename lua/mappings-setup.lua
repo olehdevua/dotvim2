@@ -16,8 +16,8 @@ vim.api.nvim_set_keymap('n', '<Space>', '<Down>', { noremap = true })
 -- nnoremap <C-q><C-q> :qall!
 -- nnoremap <leader>qa :qall! <CR>
 -- nnoremap <leader>qq :q! <CR>
-vim.api.nvim_set_keymap('n', '<leader>qa', ':qall!', { noremap = true })
-vim.api.nvim_set_keymap('n', '<leader>qq', ':q!', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>qa', ':qall!<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>qq', ':q!<CR>', { noremap = true })
 -- nnoremap <C-b> :bp<CR>
 -- nnoremap <C-b> :e#<CR> " behavior of C-^
 vim.api.nvim_set_keymap('n', '<C-b>', ':e#<CR>', { noremap = true })
