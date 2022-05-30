@@ -122,7 +122,7 @@ vim.o.list = true
 
 vim.o.scrolloff=17
 vim.o.scrolljump=17
-vim.o.sidescrolloff = 24
+vim.o.sidescrolloff = 36
 
 --" change sp window   map <Tab> <C-W>W:cd %:p:h<CR>:<CR>
 
