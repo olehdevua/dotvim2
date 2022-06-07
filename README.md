@@ -23,6 +23,8 @@ git submodule add git@github.com:folke/lsp-colors.nvim.git pack/util/start/lsp-c
 
 ##### lsp + treesitter
 
+# https://github.com/hrsh7th/vscode-langservers-extracted -- for eslint lsp
+
 git submodule add git@github.com:neovim/nvim-lspconfig.git pack/lsp/start/nvim-lspconfig
 
 git submodule add git@github.com:hrsh7th/cmp-nvim-lsp pack/lsp/start/cmp-nvim-lsp
@@ -70,7 +72,6 @@ For the future:
 * https://github.com/numToStr/Comment.nvim
 * https://github.com/L3MON4D3/LuaSnip # maybe
 * https://github.com/lewis6991/gitsigns.nvim
-* https://github.com/kyazdani42/nvim-tree.lua
 
 https://github.com/NvChad/NvChad # full-fledged setup
 

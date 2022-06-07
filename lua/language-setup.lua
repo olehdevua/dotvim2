@@ -132,7 +132,7 @@ local on_attach = function(client, bufnr)
 end
 
 -- map buffer local keybindings when the language server attaches
-local servers = { 'rust_analyzer', 'tsserver', 'bashls' }
+local servers = { 'rust_analyzer', 'tsserver', 'bashls', 'eslint' }
 for _, lsp in pairs(servers) do
   lsp_package[lsp].setup {
     capabilities,
