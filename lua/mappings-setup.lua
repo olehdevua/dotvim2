@@ -77,7 +77,7 @@ vim.api.nvim_set_keymap('n', '<S-Right>', ':vertical resize +3', { noremap = tru
 -- nnoremap <C-c><C-p> :echom expand("%:p") . ':' . line(".") <CR>
 -- 
 --nnoremap <leader>cp :let @+=expand("%:p") . ':' . line(".") <CR>
-vim.api.nvim_set_keymap('n', '<leader>cp', ':let @+=expand("%:p") . ":" . line(".")', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>cp', ':let @+=expand("%:p") . ":" . line(".")<cr>', { noremap = true })
 --  ^-- `+` is the name of register
 
 --  commented it because it prevent CTRL-I to work
