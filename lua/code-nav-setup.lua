@@ -267,6 +267,8 @@ vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>Telescope<cr>', { noremap = tru
 --vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>lua require"telescope.builtin".find_files(require("telescope.themes").get_dropdown({winblend = 10}))<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>ff', '<cmd>lua require"telescope.builtin".find_files(require("telescope.themes"))<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fs', '<cmd>Telescope lsp_dynamic_workspace_symbols<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>fd', '<cmd>Telescope lsp_document_symbols<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fr', '<cmd>Telescope lsp_references<cr>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>fc', '<cmd>Telescope commands<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>fS', '<cmd>Telescope symbols<cr>', { noremap = true })
 
