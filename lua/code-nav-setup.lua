@@ -243,6 +243,9 @@ require('telescope').setup{
     },
     layout_config = {
         vertical = { width = 0.5 }
+    },
+    file_ignore_patterns = {
+      "node_modules", "build"
     }
   },
   pickers = {
@@ -260,7 +263,7 @@ require('telescope').setup{
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
-  }
+  },
 }
 
 vim.api.nvim_set_keymap('n', '<leader>ft', '<cmd>Telescope<cr>', { noremap = true })
