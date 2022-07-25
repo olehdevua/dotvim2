@@ -14,6 +14,7 @@ source ~/.config/nvim/plugs.vim
 lua << EOF
 require("options-setup")
 require("misc-setup")
+require("lualine-setup")
 require("language-setup")
 require("code-nav-setup")
 require("mappings-setup")

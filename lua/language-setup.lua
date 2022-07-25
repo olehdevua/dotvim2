@@ -220,6 +220,21 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
+local current_treesitter_context = function()
+  if not packer_plugins["nvim-treesitter"] or packer_plugins["nvim-treesitter"].loaded == false then
+    return " "
+  end
+  local f = require'nvim-treesitter'.statusline({
+    indicator_size = 300,
+    type_patterns = {"class", "function", "method", "interface", "type_spec", "table", "if_statement", "for_statement", "for_in_statement"}
+  })
+  local fun_name = string.format("%s", f) -- convert to string, it may be a empty ts node
+  if fun_name == "vim.NIL" then
+    return " "
+  end
+  return " " .. fun_name
+end
+
 require("trouble").setup {
   -- your configuration comes here
   -- or leave it empty to use the default settings
@@ -260,14 +275,14 @@ require("trouble").setup {
   auto_preview = true, -- automatically preview the location of the diagnostic. <esc> to close preview and go back to last window
   auto_fold = false, -- automatically fold a file trouble list at creation
   auto_jump = {"lsp_definitions"}, -- for the given modes, automatically jump if there is only a single result
-  signs = {
-      -- icons / text used for a diagnostic
-      error = "🚨",
-      warning = "🙈",
-      hint = "💡",
-      information = "🗿",
-      other = "🔅"
-  },
+  --signs = {
+  --    -- icons / text used for a diagnostic
+  --    -- error = "🚨",
+  --    -- warning = "🙈",
+  --    -- hint = "💡",
+  --    -- information = "🗿",
+  --    -- other = "🔅"
+  --},
   use_diagnostic_signs = false -- enabling this will use the signs defined in your lsp client
 }
 

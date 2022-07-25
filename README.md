@@ -5,7 +5,6 @@ mkdir -p pack/{util,nav,lang,web,lsp}/{start,opt}
 
 git submodule add git@github.com:tpope/vim-surround.git pack/util/start/surround
 git submodule add git@github.com:mattn/emmet-vim.git pack/util/start/emmet
-git submodule add git@github.com:vim-airline/vim-airline.git pack/util/start/airline
 git submodule add git@github.com:editorconfig/editorconfig-vim.git pack/util/start/editorconfig
 git submodule add git@github.com:tpope/vim-fugitive.git pack/util/start/fugitive
 git submodule add git@github.com:airblade/vim-gitgutter.git pack/util/start/gitgutter
@@ -49,6 +48,7 @@ git submodule add git@github.com:jakewvincent/mkdnflow.nvim.git pack/lsp/start/m
 git submodule add git@github.com:kien/ctrlp.vim.git pack/nav/start/ctrlp.vim
 git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtreej
 git submodule add git@github.com:kyazdani42/nvim-tree.lua.git pack/nav/start/nvim-tree
+git submodule add git@github.com:nvim-lualine/lualine.nvim.git pack/nav/start/lualine
 
 git submodule add git@github.com:nvim-telescope/telescope.nvim.git  pack/nav/start/telescope.nvim
 git submodule add git@github.com:nvim-telescope/telescope-symbols.nvim.git pack/nav/start/telescope-symbols

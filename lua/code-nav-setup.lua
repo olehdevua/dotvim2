@@ -24,34 +24,34 @@ vim.g.symbols_outline = {
       'Property',
       'Constant'
     },
-    symbols = {
-        File = {icon = "📜", hl = "TSURI"},
-        Module = {icon = "📦", hl = "TSNamespace"},
-        Namespace = {icon = "📌", hl = "TSNamespace"},
-        Package = {icon = "🎁", hl = "TSNamespace"},
-        Class = {icon = "𝓒", hl = "TSType"},
-        Method = {icon = "ƒ", hl = "TSMethod"},
-        Property = {icon = "🪄", hl = "TSMethod"},
-        Field = {icon = "♣️", hl = "TSField"},
-        Constructor = {icon = "🔧", hl = "TSConstructor"},
-        Enum = {icon = "ℰ", hl = "TSType"},
-        Interface = {icon = "ﰮ", hl = "TSType"},
-        Function = {icon = "⚙️", hl = "TSFunction"},
-        Variable = {icon = "🥃", hl = "TSConstant"},
-        Constant = {icon = "♾", hl = "TSConstant"},
-        String = {icon = "𝓐", hl = "TSString"},
-        Number = {icon = "#", hl = "TSNumber"},
-        Boolean = {icon = "⊨", hl = "TSBoolean"},
-        Array = {icon = "", hl = "TSConstant"},
-        Object = {icon = "⦿", hl = "TSType"},
-        Key = {icon = "🔐", hl = "TSType"},
-        Null = {icon = "NULL", hl = "TSType"},
-        EnumMember = {icon = ">", hl = "TSField"},
-        Struct = {icon = "𝓢", hl = "TSType"},
-        Event = {icon = "🗲", hl = "TSType"},
-        Operator = {icon = "+", hl = "TSOperator"},
-        TypeParameter = {icon = "𝙏", hl = "TSParameter"}
-    }
+    --symbols = {
+    --    File = {icon = "📜", hl = "TSURI"},
+    --    Module = {icon = "📦", hl = "TSNamespace"},
+    --    Namespace = {icon = "📌", hl = "TSNamespace"},
+    --    Package = {icon = "🎁", hl = "TSNamespace"},
+    --    Class = {icon = "𝓒", hl = "TSType"},
+    --    Method = {icon = "ƒ", hl = "TSMethod"},
+    --    Property = {icon = "🪄", hl = "TSMethod"},
+    --    Field = {icon = "♣️", hl = "TSField"},
+    --    Constructor = {icon = "🔧", hl = "TSConstructor"},
+    --    Enum = {icon = "ℰ", hl = "TSType"},
+    --    Interface = {icon = "ﰮ", hl = "TSType"},
+    --    Function = {icon = "⚙️", hl = "TSFunction"},
+    --    Variable = {icon = "🥃", hl = "TSConstant"},
+    --    Constant = {icon = "♾", hl = "TSConstant"},
+    --    String = {icon = "𝓐", hl = "TSString"},
+    --    Number = {icon = "#", hl = "TSNumber"},
+    --    Boolean = {icon = "⊨", hl = "TSBoolean"},
+    --    Array = {icon = "", hl = "TSConstant"},
+    --    Object = {icon = "⦿", hl = "TSType"},
+    --    Key = {icon = "🔐", hl = "TSType"},
+    --    Null = {icon = "NULL", hl = "TSType"},
+    --    EnumMember = {icon = ">", hl = "TSField"},
+    --    Struct = {icon = "𝓢", hl = "TSType"},
+    --    Event = {icon = "🗲", hl = "TSType"},
+    --    Operator = {icon = "+", hl = "TSOperator"},
+    --    TypeParameter = {icon = "𝙏", hl = "TSParameter"}
+    --}
 }
 
 vim.api.nvim_set_keymap('n', '<leader>ns', '<cmd>SymbolsOutline<cr>', { noremap = true })
@@ -98,11 +98,11 @@ require'nvim-tree'.setup {
   renderer = {
     indent_markers = {
       enable = false,
-      icons = {
-        corner = "└ ",
-        edge = "│ ",
-        none = "  ",
-      },
+      --icons = {
+      --  corner = "└ ",
+      --  edge = "│ ",
+      --  none = "  ",
+      --},
     },
     icons = {
       webdev_colors = true,
@@ -115,29 +115,29 @@ require'nvim-tree'.setup {
         folder_arrow = false,
         git = true,
       },
-      glyphs = {
-        default = "📜",
-        symlink = "🏷",
-        folder = {
-          arrow_closed = "📤",
-          arrow_open = "📥",
-          default = "📫",
-          open = "📬",
-          empty = "📪",
-          empty_open = "📭",
-          symlink = "🔗",
-          symlink_open = "",
-        },
-        git = {
-          unstaged = "✗",
-          staged = "✓",
-          unmerged = "⛓",
-          renamed = "➜",
-          untracked = "★",
-          deleted = "🕳",
-          ignored = "◌",
-        },
-      },
+      --glyphs = {
+      --  --default = "📜",
+      --  symlink = "🏷",
+      --  folder = {
+      --    arrow_closed = "📤",
+      --    arrow_open = "📥",
+      --    default = "📫",
+      --    open = "📬",
+      --    empty = "📪",
+      --    empty_open = "📭",
+      --    symlink = "🔗",
+      --    symlink_open = "",
+      --  },
+      --  git = {
+      --    unstaged = "✗",
+      --    staged = "✓",
+      --    unmerged = "⛓",
+      --    renamed = "➜",
+      --    untracked = "★",
+      --    deleted = "🕳",
+      --    ignored = "◌",
+      --  },
+      --},
     }
   },
   hijack_directories = {
@@ -157,12 +157,12 @@ require'nvim-tree'.setup {
   diagnostics = {
     enable = false,
     show_on_dirs = false,
-    icons = {
-      hint = "💡",
-      info = "🗿",
-      warning = "🙈",
-      error = "🚨",
-    },
+    --icons = {
+    --  hint = "💡",
+    --  info = "🗿",
+    --  warning = "🙈",
+    --  error = "🚨",
+    --},
   },
   filters = {
     dotfiles = false,
