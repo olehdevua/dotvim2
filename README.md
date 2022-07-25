@@ -38,6 +38,7 @@ git submodule add git@github.com:hrsh7th/cmp-vsnip.git pack/lsp/start/cmp-vsnip
 git submodule add git@github.com:folke/trouble.nvim.git pack/lsp/start/trouble
 
 git submodule add git@github.com:nvim-treesitter/nvim-treesitter.git pack/lsp/start/nvim-treesitter
+git submodule add git@github.com:nvim-treesitter/nvim-treesitter-context.git pack/lsp/start/nvim-treesitter-context
 
 git submodule add git@github.com:mfussenegger/nvim-dap.git pack/lsp/start/nvim-dap
  
