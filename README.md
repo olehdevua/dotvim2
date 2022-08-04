@@ -12,7 +12,7 @@ git submodule add git@github.com:airblade/vim-gitgutter.git pack/util/start/gitg
 git submodule add git@gitlab.redox-os.org:redox-os/ion-vim.git pack/lang/start/ion
 git submodule add git@github.com:ellisonleao/glow.nvim.git pack/lang/start/glow
 
-git submodule add git@github.comLunarVim/Colorschemes.git pack/util/start/colorschemes
+git submodule add git@github.com:LunarVim/Colorschemes.git pack/util/start/colorschemes
 
 ##### dependencies
 
@@ -47,7 +47,6 @@ git submodule add git@github.com:jakewvincent/mkdnflow.nvim.git pack/lsp/start/m
 ###### nav
 
 git submodule add git@github.com:kien/ctrlp.vim.git pack/nav/start/ctrlp.vim
-git submodule add git@github.com:scrooloose/nerdtree.git pack/nav/start/nerdtreej
 git submodule add git@github.com:kyazdani42/nvim-tree.lua.git pack/nav/start/nvim-tree
 git submodule add git@github.com:nvim-lualine/lualine.nvim.git pack/nav/start/lualine
 
